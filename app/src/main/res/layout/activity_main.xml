@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_coffee_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffade">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/coffee_splash"
+                    android:id="@+id/coffee_image"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/justcoffee"
+                    android:id="@+id/logo_image"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Just Coffee"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/coffee_image"
+                    android:layout_margin="10dp"
+                    android:id="@+id/coffee_heading"
+                    android:textColor="#542b07"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/coffee_heading"
+                    android:text="10:00-19:00"
+                    android:layout_below="@id/coffee_image"
+                    android:layout_margin="20dp"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3701 Orin Road Madison, WI 53704"
+                    android:layout_below="@id/coffee_heading"
+                    android:layout_marginLeft="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#97562e"
+                    android:textSize="18sp"
+                    android:id="@+id/address"
+                    android:autoLink="map"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/address"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="_____________________________________________________"
+                    android:textStyle="bold"
+                    android:id="@+id/line_diff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enjoy the rich, authenticate taste of West Indian Coffee through our variety of coffee speciality drinks range. From Cappuccino, Latte to Iced Frappe, Mocha, we have all got covered. Come visit us! "
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:textSize="18sp"
+                    android:layout_below="@id/line_diff"
+                    android:id="@+id/details"
+                    android:textColor="#dc6236"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/details"
+                    android:layout_margin="12dp"
+                    android:textSize="18sp"
+                    android:text="Contact: "
+                    android:id="@+id/cnct_txt"
+                    android:textStyle="bold"
+                    android:textColor="#8e5630"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="6041649745"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@id/cnct_txt"
+                    android:layout_below="@id/details"
+                    android:autoLink="phone"
+                    android:textColor="#816638"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
